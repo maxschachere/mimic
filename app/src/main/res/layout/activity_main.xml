@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="co.mimic.mimic.MainActivity">
+
+
+    // Bottom
+    <ImageView
+        android:id="@+id/pantImage"
+        android:layout_width="190dp"
+        android:layout_height="178dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:layout_constraintVertical_bias="0.524"
+        app:layout_constraintHorizontal_bias="0.503" />
+
+
+    // Top
+    <ImageView
+        android:id="@+id/topImage"
+        android:layout_width="147dp"
+        android:layout_height="165dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/pantImage" />
+
+    //Shoes
+    <ImageView
+        android:id="@+id/shoeImage"
+        android:layout_width="96dp"
+        android:layout_height="97dp"
+        app:layout_constraintTop_toTopOf="@+id/pantImage"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/shadow"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintVertical_bias="0.784"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+
+    //Shadow
+    <ImageView
+        android:id="@+id/shadow"
+        android:layout_width="141dp"
+        android:layout_height="61dp"
+        app:srcCompat="@drawable/shadow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+
+    // Outside condition
+    <TextView
+        android:id="@+id/outsideDesc"
+        android:layout_width="125dp"
+        android:layout_height="46dp"
+        android:background="#00000000"
+        android:gravity="bottom"
+        android:text="Rain likely"
+        android:textSize="15dp"
+        android:textColor="#bfbfbf"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp" />
+
+    <!--
+    <TextView
+        android:id="@+id/low"
+        android:layout_width="58dp"
+        android:layout_height="43dp"
+        android:background="#00000000"
+        android:gravity="bottom"
+        android:text="30°"
+        android:textSize="15dp"
+        android:textColor="#bfbfbf"
+        app:layout_constraintLeft_toRightOf="@+id/high"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="26dp" />
+    -->
+
+    // High temperature
+    <TextView
+        android:layout_width="39dp"
+        android:layout_height="47dp"
+        android:background="#00000000"
+        android:gravity="bottom"
+        android:text="72°"
+        android:textSize="25dp"
+        android:textColor="#969696"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/high"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="24dp"
+        tools:layout_editor_absoluteY="496dp" />
+
+    // Logo
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="71dp"
+        android:layout_height="54dp"
+        android:src="@drawable/logo"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/topImage" />
+
+    // Casual meetings count
+    <TextView
+        android:id="@+id/casual"
+        android:layout_width="30dp"
+        android:layout_height="49dp"
+        android:background="#00000000"
+        android:gravity="bottom"
+        android:textAlignment="center"
+        android:textColor="#bfbfbf"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="21dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    // Formal meetings count
+    <TextView
+        android:id="@+id/formal"
+        android:layout_width="30dp"
+        android:layout_height="49dp"
+        android:background="#00000000"
+        android:gravity="bottom"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:textColor="#bfbfbf"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="61dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    // Icons
+    <ImageView
+        android:id="@+id/icons"
+        android:layout_width="75dp"
+        android:layout_height="64dp"
+        app:srcCompat="@drawable/icons"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageButton
+        android:id="@+id/profilebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#00000000"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/profilebutton" />
+
+
+</android.support.constraint.ConstraintLayout>

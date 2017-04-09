@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a9a9a9"
+    android:elevation="0dp">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome, Sal Bhakuni"
+        android:textAlignment="center"
+        android:textColor="#f9f9f9"
+        android:ems="10"
+        android:background="#00000000"
+        android:layout_below="@+id/imageView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/NYT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New York Times"
+        android:textAlignment="center"
+        android:textSize="5pt"
+        android:fontFamily= "serif"
+        android:textColor="#f9f9f9"
+        android:layout_marginTop="21dp"
+        android:background="#00000000"
+        android:ems="10"
+        android:layout_below="@+id/button3"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/titleTrends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Top Fashion Trends"
+        android:textAlignment="center"
+        android:textSize="10pt"
+        android:textColor="#f9f9f9"
+        android:background="#00000000"
+        android:ems="10"
+        android:layout_marginTop="7dp"
+        android:layout_below="@+id/NYT"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/trends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleTrends"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:background="#00000000"
+        android:text="Top Fashion Trends"
+        android:textColor="#f9f9f9" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        app:srcCompat="@mipmap/profilebutton" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:text="Settings"
+        android:layout_below="@+id/welcome"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_alignStart="@+id/button3" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="Log Out" />
+
+</RelativeLayout>
